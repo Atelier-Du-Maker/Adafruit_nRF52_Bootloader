@@ -37,22 +37,29 @@
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
-#define BUTTONS_NUMBER  1
+#define BUTTONS_NUMBER  2
 
-#define BUTTON_1       _PINNUM(1, 6)
+#define BUTTON_1       _PINNUM(1, 10)
+#define BUTTON_2       _PINNUM(1, 11)
 #define BUTTON_PULL    NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
 // BLE OTA
 //--------------------------------------------------------------------+
 #define BLEDIS_MANUFACTURER  "Holyiot"
-#define BLEDIS_MODEL         "HOLYIOT_NRF52840"
-
+#define BLEDIS_MODEL         "HOLY_NRF52840"
 //--------------------------------------------------------------------+
 // USB
 //--------------------------------------------------------------------+
+#define USB_DESC_VID           0x239A
+#define USB_DESC_UF2_PID       0x009F
+//--------------------------------------------------------------------+
+// UF2
+//--------------------------------------------------------------------+
 #define UF2_PRODUCT_NAME  "Holyiot nRF52840 "
+#define UF2_VOLUME_LABEL  "HOLY52840"
 #define UF2_BOARD_ID      "holyiot-nRF52840-v1"
 #define UF2_INDEX_URL     "https://github.com/Atelier-Du-Maker/HolyIoT_NRF52840"
+
 
 #endif // HOLYIOT_NRF52840_H
