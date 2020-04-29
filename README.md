@@ -12,6 +12,7 @@ This is a CDC/DFU/UF2 bootloader for nRF52 boards.
 - [Adafruit ItsyBitsy nRF52840 Express](https://www.adafruit.com/product/4481)
 - Adafruit Metro nRF52840 Express
 - [Electronut Labs Papyr](https://docs.electronut.in/papyr/)
+- [Holyiot nRF52840 ("BreakOut")](https://github.com/Atelier-Du-Maker/HolyIoT_NRF52840)
 - MakerDiary MDK nRF52840 USB Dongle
 - [Nordic nRF52840DK PCA10056](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52840-DK)
 - [Nordic nRF52840DK PCA10059 ("Dongle")](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52840-Dongle)
