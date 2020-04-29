@@ -1,6 +1,6 @@
 # Adafruit nRF52 Bootloader
 
-[![Build Status](https://github.com/adafruit/Adafruit_nRF52_Bootloader/workflows/Build/badge.svg)](https://github.com/adafruit/Adafruit_nRF52_Bootloader/actions)
+![Build](https://github.com/Atelier-Du-Maker/Adafruit_nRF52_Bootloader/workflows/Build/badge.svg?branch=edrig&event=status)
 
 This is a CDC/DFU/UF2 bootloader for nRF52 boards.
 
