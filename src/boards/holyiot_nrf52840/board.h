@@ -73,7 +73,7 @@
 // UF2
 //--------------------------------------------------------------------+
 #define UF2_PRODUCT_NAME  "Holyiot_nRF52840 "
-#define UF2_VOLUME_LABEL  "HOLYIOT_NRF52840"
+#define UF2_VOLUME_LABEL  "NRF52840"
 #define UF2_BOARD_ID      "holyiot-nRF52840"
 #define UF2_INDEX_URL     "https://github.com/Atelier-Du-Maker/HolyIoT_NRF52840"
 
