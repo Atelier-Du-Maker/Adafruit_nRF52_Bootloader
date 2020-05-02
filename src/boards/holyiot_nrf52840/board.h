@@ -30,35 +30,51 @@
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
-#define LEDS_NUMBER       1
-#define LED_PRIMARY_PIN   _PINNUM(0, 19)
-#define LED_STATE_ON      0
+#define LEDS_NUMBER           2
+#define LED_PRIMARY_PIN       _PINNUM(1, 15)
+#define LED_SECONDARY_PIN     _PINNUM(1, 10)
+#define LED_STATE_ON          1
+
+#define LED_NEOPIXEL           _PINNUM(0, 16)
+#define NEOPIXELS_NUMBER      1
+#define BOARD_RGB_BRIGHTNESS  0x040404
 
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
-#define BUTTONS_NUMBER  2
+#define BUTTONS_NUMBER        2
+#define BUTTON_1              _PINNUM(1, 02)
+#define BUTTON_2              _PINNUM(0, 10)
+#define BUTTON_PULL           NRF_GPIO_PIN_PULLUP
 
-#define BUTTON_1       _PINNUM(1, 10)
-#define BUTTON_2       _PINNUM(1, 11)
-#define BUTTON_PULL    NRF_GPIO_PIN_PULLUP
+/*------------------------------------------------------------------*/
+/* UART (only used by nRF52832)
+ *------------------------------------------------------------------*/
+#define RX_PIN_NUMBER         8
+#define TX_PIN_NUMBER         6
+#define CTS_PIN_NUMBER        0
+#define RTS_PIN_NUMBER        0
+#define HWFC                  false
 
 //--------------------------------------------------------------------+
 // BLE OTA
 //--------------------------------------------------------------------+
-#define BLEDIS_MANUFACTURER  "Holyiot"
-#define BLEDIS_MODEL         "HOLY_NRF52840"
+#define BLEDIS_MANUFACTURER   "Atelier-Du-Maker"
+#define BLEDIS_MODEL          "HOLY_NRF52840"
+
 //--------------------------------------------------------------------+
 // USB
 //--------------------------------------------------------------------+
 #define USB_DESC_VID           0x239A
 #define USB_DESC_UF2_PID       0x009F
+#define USB_DESC_CDC_ONLY_PID  0x809F
+
 //--------------------------------------------------------------------+
 // UF2
 //--------------------------------------------------------------------+
-#define UF2_PRODUCT_NAME  "Holyiot nRF52840 "
-#define UF2_VOLUME_LABEL  "HOLY52840"
-#define UF2_BOARD_ID      "holyiot-nRF52840-v1"
+#define UF2_PRODUCT_NAME  "Holyiot_nRF52840 "
+#define UF2_VOLUME_LABEL  "HOLYIOT_NRF52840"
+#define UF2_BOARD_ID      "holyiot-nRF52840"
 #define UF2_INDEX_URL     "https://github.com/Atelier-Du-Maker/HolyIoT_NRF52840"
 
 
