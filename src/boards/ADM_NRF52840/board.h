@@ -22,8 +22,8 @@
  * THE SOFTWARE.
  */
 
-#ifndef ADM_B_NRF52840_1_H
-#define ADM_B_NRF52840_1_H
+#ifndef ADM_NRF52840_H
+#define ADM_NRF52840_H
 
 #define _PINNUM(port, pin)    ((port)*32 + (pin))
 
@@ -31,7 +31,7 @@
 /* LED
  *------------------------------------------------------------------*/
 #define LEDS_NUMBER       1
-#define LED_PRIMARY_PIN   _PINNUM(0, 19) // Red
+#define LED_PRIMARY_PIN   _PINNUM(1, 10) // Red
 //#define LED_SECONDARY_PIN 12 // Blue
 #define LED_STATE_ON      0
 
@@ -40,15 +40,15 @@
  *------------------------------------------------------------------*/
 #define BUTTONS_NUMBER  2
 
-#define BUTTON_1       _PINNUM(0, 11)
-#define BUTTON_2       _PINNUM(0, 12)
+#define BUTTON_1       _PINNUM(0, 26)
+#define BUTTON_2       _PINNUM(0, 06)
 #define BUTTON_PULL    NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
 // BLE OTA
 //--------------------------------------------------------------------+
 #define BLEDIS_MANUFACTURER  "Atelier-Du-Maker"
-#define BLEDIS_MODEL         "ADM_B_NRF52840_1"
+#define BLEDIS_MODEL         "ADM_NRF52840"
 
 //--------------------------------------------------------------------+
 // USB
@@ -59,9 +59,9 @@
 #define USB_DESC_CDC_ONLY_PID  0x009F
 
 //------------- UF2 -------------//
-#define UF2_PRODUCT_NAME  "AtelierDuMaker NRF52840 Breakout"
-#define UF2_VOLUME_LABEL   "ADM840BOOT"
-#define UF2_BOARD_ID      "ADM_B_NRF52840_1"
-#define UF2_INDEX_URL     "https://github.com/Atelier-Du-Maker/HolyIoT_NRF52840"
+#define UF2_PRODUCT_NAME  "AtelierDuMaker NRF52840"
+#define UF2_VOLUME_LABEL   "ADM52BOOT"
+#define UF2_BOARD_ID      "ADM_NRF52840"
+#define UF2_INDEX_URL     "https://github.com/Atelier-Du-Maker/ADM_52840"
 
 #endif // ADM_B_NRF52840_1_H
