@@ -34,6 +34,10 @@
 #define LED_PRIMARY_PIN   _PINNUM(1, 10) // Red
 #define LED_STATE_ON      0
 
+#define LED_NEOPIXEL      _PINNUM(0, 8)
+#define NEOPIXELS_NUMBER      1
+#define BOARD_RGB_BRIGHTNESS  0x040404
+
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
