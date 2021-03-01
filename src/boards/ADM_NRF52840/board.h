@@ -22,8 +22,8 @@
  * THE SOFTWARE.
  */
 
-#ifndef ADM_NRF52840_H
-#define ADM_NRF52840_H
+#ifndef _ADM_NRF52840_H
+#define _ADM_NRF52840_H
 
 #define _PINNUM(port, pin)    ((port)*32 + (pin))
 
@@ -32,7 +32,6 @@
  *------------------------------------------------------------------*/
 #define LEDS_NUMBER       1
 #define LED_PRIMARY_PIN   _PINNUM(1, 10) // Red
-//#define LED_SECONDARY_PIN 12 // Blue
 #define LED_STATE_ON      0
 
 /*------------------------------------------------------------------*/
@@ -64,4 +63,4 @@
 #define UF2_BOARD_ID      "ADM_NRF52840"
 #define UF2_INDEX_URL     "https://github.com/Atelier-Du-Maker/ADM_52840"
 
-#endif // ADM_B_NRF52840_1_H
+#endif // _ADM_B_NRF52840_1_H
